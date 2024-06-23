@@ -72,7 +72,10 @@ h1 {
 /* Prueba para poner los estilos también a este texto aparte. Sin esto, el texto seguiría quendándose rojo */
 .ejemplo {
     color: brown;
+    font-size: 1.5em;
 }
 .dark-mode .ejemplo {
     color: #cacaca;
 }
+/* Con esto vemos, que para cada elemento al que no se le agreguen los estilos directamente con el body,
+habrá que hacerlo de forma manual */
