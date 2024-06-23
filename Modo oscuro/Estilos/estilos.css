@@ -22,8 +22,22 @@ i  {
     cursor: pointer;
 }
 #sun {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    position: relative;
+    left: -35px;
+}
+#moon {
+    transition: 0.3s ease;
+}
+#moon.ocultar-luna {
     visibility: hidden;
     opacity: 0;
+}
+#sun.mostrar-sol {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* ESTILOS DEL TEXTO */
