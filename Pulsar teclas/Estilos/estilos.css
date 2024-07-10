@@ -1,0 +1,87 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*ESTILOS PARA EL TEXTO*/
+h1{
+    color: brown;
+    font-style: italic;
+    font-size: 3em;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: -100px;
+}
+
+/*ESTILOS PARA LAS TECLAS*/
+.teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /*bottom: -50px;*/
+}
+.teclas-arriba{
+    display: flex;
+    gap: 13px;
+}
+
+.teclas div div{
+    background-color: rgb(173, 173, 173);
+    border-bottom: 7px solid rgb(112, 112, 112);
+    outline: solid 3px #000;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.6);
+}
+.teclas div div:active{
+    border: 0;
+    transform: translateY(7px);
+    box-shadow: 0px 0px 0px;
+}
+
+#arriba{
+    position: relative;
+    bottom: 32px;
+}
+#abajo{
+    position: absolute;
+    bottom: -38px;
+    left: 93px;
+}
+#abajo:active{
+    border: 0;
+    transform: translateY(0px);
+}
+
+/*ESTILOS PARA EL JAVASCRIPT*/
+/*Este active style, es la clase que le pasaremos al JavaScript para poner los estilos del :active. Tiene
+sus mismas propiedades, pero como no podemos pasarle directamente el :active, creamos una clase en CSS para 
+añadir sus estilos. No hace falta poner esta clase en HTML */
+.active-style{
+    border: 0 !important;
+    transform: translateY(7px);
+    box-shadow: 0px 0px 0px !important;
+}
+.active-style-down{
+    border: 0 !important;
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px !important;
+}
