@@ -5,28 +5,48 @@
 }
 body {
     background-color: #fff;
+    background: linear-gradient(45deg, rgb(216, 216, 216), rgb(255, 196, 196));
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+}
+
+/* ESTILOS DEL CONTADOR */
+.puntos {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #464646;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
 }
 
 /* ESTILOS DEL TECLADO */
 .teclado {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
 }
 .fila {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 }
 .fila > div {
     height: 50px;
     width: 50px;
-    border: solid 1px #000;
+    outline: solid 2px #000;
+    border-bottom: 7px solid rgb(75, 75, 75);
+    border-left: 5px solid rgb(109, 109, 109);
+    border-right: 5px solid rgb(109, 109, 109);
+    border-top: 3px solid rgb(150, 150, 150);
     border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    font-weight: bold;
 }
 /* Teclas medias */
 div.medium {
@@ -44,5 +64,9 @@ div.extraLarge {
 
 /* Estilos de la tecla que debe ser pulsada */
 .teclado .fila > div.tecla-pulsar {
-    background-color: rgb(241, 131, 131);
+    background-color: rgb(221, 46, 46);
+    border-bottom-color: rgb(150, 25, 25);
+    border-left-color: rgb(199, 36, 36);
+    border-right-color:rgb(199, 36, 36);
+    border-top-color: rgb(248, 64, 64);
 }
