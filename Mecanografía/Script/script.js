@@ -1,4 +1,5 @@
-const teclas=document.querySelectorAll(".teclado > div");
+const teclas=document.querySelectorAll(".playable");
+console.log(teclas);
 
 // Para iniciar una tecla al cargar la página
 window.addEventListener("DOMContentLoaded", function() {
@@ -22,4 +23,10 @@ window.addEventListener("DOMContentLoaded", function() {
             teclas[random].classList.add("tecla-pulsar");
         }
     });
+});
+
+
+// Aviso (me aburro)
+document.querySelector(".teclado").addEventListener("click", function() {
+    alert("SOLO ESTÁ PERMITIDO JUGAR CON LAS TECLAS, NO VALE CLICKAR");
 });

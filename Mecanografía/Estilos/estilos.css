@@ -1,15 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS DEL TECLADO */
 .teclado {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 5px;
 }
-.teclado > div {
-    height: 100px;
-    width: 100px;
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.fila > div {
+    height: 50px;
+    width: 50px;
     border: solid 1px #000;
     border-radius: 3px;
 }
+/* Teclas medias */
+div.medium {
+    width: 75px;
+}
+/* Teclas grandes */
+div.large {
+    width: 90px;
+}
+/* Teclas extra grandes */
+div.extraLarge {
+    width: 118px;
+}
 
 
-.teclado > div.tecla-pulsar {
+/* Estilos de la tecla que debe ser pulsada */
+.teclado .fila > div.tecla-pulsar {
     background-color: rgb(241, 131, 131);
 }

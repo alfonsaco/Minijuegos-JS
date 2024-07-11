@@ -4,14 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilos.css" type="text/css">
-    <title>Document</title>
+    <title>Mecanografía</title>
 </head>
 <body>
-    <div class="teclado">
-        <div data-tecla="A">A</div>
-        <div data-tecla="S">S</div>
-        <div data-tecla="D">D</div>
-    </div>
+    <main>
+        <div class="puntos">
+            <h1>0</h1>
+        </div>
+        <div class="teclado">
+            <!--Solo las teclas que tengan la clase "playable" podrán usarse para el juego
+            Primera fila-->
+            <div class="fila">
+                <div class="playable">ESC</div>
+                <div class="playable" data-tecla="1">1</div>
+                <div class="playable" data-tecla="2">2</div>
+                <div class="playable" data-tecla="3">3</div>
+                <div class="playable" data-tecla="4">4</div>
+                <div class="playable" data-tecla="5">5</div>
+                <div class="playable" data-tecla="6">6</div>
+                <div class="playable" data-tecla="7">7</div>
+                <div class="playable" data-tecla="8">8</div>
+                <div class="playable" data-tecla="9">9</div>
+                <div class="playable" data-tecla="0">0</div>
+                <div>?</div>
+                <div>¿</div>
+                <div class="playable medium" data-tecla="Backspace">&leftarrow;</div>
+            </div>
+            <!--Segunda fila-->
+            <div class="fila">
+                <div class="playable medium">TAB</div>
+                <div class="playable" data-tecla="Q">Q</div>
+                <div class="playable" data-tecla="W">W</div>
+                <div class="playable" data-tecla="E">E</div>
+                <div class="playable" data-tecla="R">R</div>
+                <div class="playable" data-tecla="T">T</div>
+                <div class="playable" data-tecla="Y">Y</div>
+                <div class="playable" data-tecla="U">U</div>
+                <div class="playable" data-tecla="I">I</div>
+                <div class="playable" data-tecla="O">O</div>
+                <div class="playable" data-tecla="P">P</div>
+                <div>[</div>
+                <div>]</div>
+                <div></div>
+            </div>
+            <!--Tercera fila-->
+            <div class="fila">
+                <div class="playable large">CAPS LOCK</div>
+                <div class="playable" data-tecla="A">A</div>
+                <div class="playable" data-tecla="S">S</div>
+                <div class="playable" data-tecla="D">D</div>
+                <div class="playable" data-tecla="F">F</div>
+                <div class="playable" data-tecla="G">G</div>
+                <div class="playable" data-tecla="H">H</div>
+                <div class="playable" data-tecla="J">J</div>
+                <div class="playable" data-tecla="K">K</div>
+                <div class="playable" data-tecla="L">L</div>
+                <div></div>
+                <div>´</div>
+                <div class="playable large">ENTER</div>
+            </div>
+            <!--Cuarta fila-->
+            <div class="fila">
+                <div class="extraLarge">SHIFT</div>
+                <div class="playable" data-tecla="Z">Z</div>
+                <div class="playable" data-tecla="X">X</div>
+                <div class="playable" data-tecla="C">C</div>
+                <div class="playable" data-tecla="V">V</div>
+                <div class="playable" data-tecla="B">B</div>
+                <div class="playable" data-tecla="N">N</div>
+                <div class="playable" data-tecla="M">M</div>
+                <div class="playable" data-tecla=",">,</div>
+                <div class="playable" data-tecla=".">.</div>
+                <div class="playable" data-tecla="-">-</div>
+                <div class="extraLarge">SHIFT</div>
+            </div>
+        </div>
+    </main>
 
     <script src="Script/script.js"></script>
 </body>
