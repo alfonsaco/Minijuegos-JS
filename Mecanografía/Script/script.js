@@ -1,5 +1,5 @@
 const teclas=document.querySelectorAll(".playable");
-console.log(teclas);
+const contador=document.querySelector(".puntos h1");
 
 // Para iniciar una tecla al cargar la página
 window.addEventListener("DOMContentLoaded", function() {
@@ -21,9 +21,22 @@ window.addEventListener("DOMContentLoaded", function() {
 
             noRepetidas.clear();
             teclas[random].classList.add("tecla-pulsar");
+
+            contador.innerHTML++;
+        } else {
+            contador.innerHTML--;
+        }
+
+        if(contador.innerHTML > 0) {
+            contador.style.color='rgb(53, 141, 53)';
+        } else if(contador.innerHTML==0) {
+            contador.style.color='#464646';
+        } else {
+            contador.style.color='brown';
         }
     });
 });
+
 
 
 // Aviso (me aburro)
