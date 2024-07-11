@@ -1,0 +1,15 @@
+.teclado {
+    display: flex;
+    gap: 10px;
+}
+.teclado > div {
+    height: 100px;
+    width: 100px;
+    border: solid 1px #000;
+    border-radius: 3px;
+}
+
+
+.teclado > div.tecla-pulsar {
+    background-color: rgb(241, 131, 131);
+}
