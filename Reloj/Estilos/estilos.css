@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Digi';
+    src: url(../Fuentes/DS-DIGI.TTF);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DISEÑO DEL RELOJ */
+.reloj {
+    height: 200px;
+    width: 500px;
+    background-color: #000;
+    border: 15px solid;
+    border-image: linear-gradient(to top, rgb(92, 92, 92), rgb(151, 151, 151));
+    border-image-slice: 1;
+    outline: 3px #000 solid;
+}
+.reloj > div {
+    width: 100%;
+    height: 100%;
+    border: 2px rgb(202, 202, 202) solid;
+    color: #E21919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Digi';
+    gap: 15px;
+    user-select: none;
+}
+
+.horas-min {
+    font-size: 9em;
+}
+.segundos {
+    margin-top: 65px;
+    font-size: 3em;
+}
