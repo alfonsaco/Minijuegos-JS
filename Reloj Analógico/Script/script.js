@@ -15,7 +15,14 @@ setInterval(() => {
 const cifras=document.getElementById("cifras");
 
 let grados=0;
+let numeroHora=0;
 for (let i = 0; i < 12; i++) {
-    cifras.innerHTML+='<div class="numero" style="rotate: '+grados+'deg"</div>';
+    if(numeroHora == 0) {
+        cifras.innerHTML+='<div class="numero" style="rotate: '+grados+'deg">'+12+'</div>';
+    } else {
+        cifras.innerHTML+='<div class="numero" style="rotate: '+grados+'deg">'+numeroHora+'</div>';
+    }
+
+    numeroHora++;
     grados+=30;
 }
