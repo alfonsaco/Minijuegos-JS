@@ -23,6 +23,7 @@ body {
     border-image: linear-gradient(to top, rgb(92, 92, 92), rgb(151, 151, 151));
     border-image-slice: 1;
     outline: 3px #000 solid;
+    position: absolute;
 }
 .reloj > div {
     width: 100%;
@@ -36,11 +37,14 @@ body {
     gap: 15px;
     user-select: none;
 }
-
 .horas-min {
     font-size: 9em;
+    position: relative;
+    left: -20px;
 }
 .segundos {
     margin-top: 65px;
     font-size: 3em;
+    position: absolute;
+    right: 40px;
 }
