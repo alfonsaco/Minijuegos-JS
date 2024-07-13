@@ -21,6 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
+    background-color: #fff;
+    
 }
 .reloj > div {
     width: 200px;
@@ -29,8 +31,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    scale: -1;
+}
+.eje {
+    position: absolute;
+    background-color: brown;
+    height: 7px !important;
+    width: 7px !important;
+    border-radius: 100%;
 }
 
+/* AGUJAS */
 #segundos > div {
     width: 1px;
     height: 100px;
@@ -44,13 +55,20 @@ body {
     background-color: #000;
     position: relative;
     top: 22%;
-    clip-path: ellipse();
 }
 #horas > div {
     width: 4px;
     height: 70px;
     background-color: #000;
     position: relative;
-    top: 17%;
-    clip-path: ellipse();
+    top: 18%;
+}
+
+/* NÚMEROS */
+.numero {
+    width: 1.5px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    transform: translateY(120px);
 }
