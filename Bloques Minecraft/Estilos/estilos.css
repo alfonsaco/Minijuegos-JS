@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 209, 188);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ESTILOS PARA LA CUADRÍCULAS Y LOS BLOQUES*/
+.cuadricula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+img{
+    width: 140px;
+    transition: scale 0.3s ease;
+}
+img:hover{
+    scale: 1.2;
+}
+
+/*ESTILOS PARA LA CAJA DE NOMBRES*/
+.marco{
+    margin-top: 40px;
+    background-image: url(../Imagenes/222.png);
+    background-repeat: repeat;
+    background-size: 30px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 280px;
+}
+.nombresBorde{
+    height: 50px;
+    width: 250px;
+    background-image: url(../Imagenes/1fa942d7ff159e01c5cf2a8f77680133.jpg);
+    background-repeat: repeat;
+    background-size: 30px;
+    box-shadow: 0px 3px 3px black;
+    /*ESTILOS PARA LOS NOMBRES QUE APARECEN CON JAVASCRIPT*/
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    font-size: 1.3em;
+    text-shadow: 0px 2px 1px black;
+}
