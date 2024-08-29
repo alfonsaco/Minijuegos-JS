@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(../Fuentes/DS-DIGIB.TTF);
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to top, #b4b4b4, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*DIV QUE CONTIENE EL CONTADOR*/    
+.container{
+    background-color: #d7d7d7;
+    background-image: linear-gradient(15deg, #b9b9b9 0%, #353535 74%);
+    width: 250px;
+    height: 200px;
+    border-image: linear-gradient(to left, #868686 0%, #353535 74%);
+    border-image-slice: 1;
+    border-width: 10px;
+    border-style: solid;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid #000;
+    z-index: 10;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*Estilos para el botón y el contador*/
+#contador{
+    background: rgb(255,162,162);
+    background: radial-gradient(circle, rgb(255, 144, 144) 0%, rgb(255, 0, 0) 60%, rgba(136,0,28,1) 80%);
+    border: 0;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+/*Cursor*/
+.puntero{
+    position: absolute;
+    width: 40px;
+    bottom: -5px;
+    left: 120px;
+    animation: moverCursor 0.5s infinite alternate-reverse ease-in-out;
+}
+@keyframes moverCursor {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+/*Input con números*/
+#numeros{
+    font-family: 'Digital';
+    font-size: 2em;
+    text-align: right;
+    width: 100px;
+    border: 3px solid #000;
+}
+
+
+/*DIV CON EL RESULTADO*/
+.resultado{
+    background-color: #d7d7d7;
+    background-image: linear-gradient(45deg, #818181 0%, #353535 74%);
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 40px;
+    z-index: 0;
+    outline: 3px solid #000;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(to left, #868686 0%, #353535 74%);
+    border-image-slice: 1;
+    border-width: 0px;
+    border-bottom-width: 10px;
+    border-style: solid;
+}
+.resultado:hover{
+    transform: translateY(70px);
+}
+/*Estilos para el botón con el resultado*/
+#botonResultado{
+    background: rgb(33,163,0);
+    background: linear-gradient(to top, rgba(33,163,0,1) 0%, rgba(5,255,0,1) 50%, rgba(0,166,27,1) 100%);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+    padding: 5px 10px;
+    border: solid 3px #000;
+    font-size: 1.3em;
+}
