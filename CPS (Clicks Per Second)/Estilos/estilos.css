@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+.texto {
+    color: #d3d3d3;
+    font-size: 2.4em;
+}
+#area-pulsar {
+    width: 500px;
+    height: 350px;
+    border: dashed goldenrod 3px;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+#contador {
+    color: #eee;
+    font-size: 3em;
+}
+
+#mensaje {
+    width: 400px;
+    height: 300px;
+    background-color: #414141;
+    border-radius: 7px;
+    border: 2px solid grey;
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    scale: 0;
+    transition: 0.7s ease;
+}
+#mensaje button {
+    width: 150px;
+    height: 50px;
+    background-color: goldenrod;
+    border: 2px solid rgb(128, 93, 6);
+}
+#mensaje.aparecer-mensaje {
+    scale: 1;
+    visibility: visible;
+}
