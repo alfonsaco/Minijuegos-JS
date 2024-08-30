@@ -5,56 +5,125 @@
 }
 body {
     height: 100vh;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    font-family: 'Open Sans';
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 70px;
+    text-align: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #1f1f1f;
+    font-family: "DM Serif Text";
+    color: #aaaaaa;
+    font-size: 1.4em;
+    user-select: none;
+    cursor: pointer;
+    transition: 1s ease;
+}
+header h2 {
+    position: relative;
+    bottom: 15px;
+    font-weight: normal;
+}
+header:hover {
+    filter: drop-shadow(0px 0px 5px #97979788);
+}
+
+/* MAIN */
+main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 35px;
 }
-
-
 .texto {
     color: #d3d3d3;
-    font-size: 2.4em;
+    font-size: 1.7em;
+    font-style: italic;
 }
+/* JUEGO */
 #area-pulsar {
-    width: 500px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
     border: dashed goldenrod 3px;
     border-style: dashed;
     cursor: pointer;
 }
-
 #contador {
     color: #eee;
     font-size: 3em;
 }
 
+/* DIALOG PUNTUACIÓN */
 #mensaje {
-    width: 400px;
-    height: 300px;
-    background-color: #414141;
+    width: 500px;
+    height: 350px;
+    background-color: #242424;
     border-radius: 7px;
     border: 2px solid grey;
     position: absolute;
-    bottom: 200px;
+    top: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     visibility: hidden;
+    gap: 50px;
     scale: 0;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
+}
+#mensaje p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+#mensaje p span {
+    color: rgb(247, 90, 90);
+    font-weight: bold;
 }
 #mensaje button {
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 80px;
     background-color: goldenrod;
-    border: 2px solid rgb(128, 93, 6);
+    border: 0;
+    border-radius: 5px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 1px 3px #000;
 }
 #mensaje.aparecer-mensaje {
     scale: 1;
     visibility: visible;
+    transition: 0.6s ease;
+}
+
+/* TIEMPO */
+.tiempo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+}
+.tiempo > div:first-child {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#segundos {
+    display: flex;
+    gap: 30px;
+}
+#segundos div {
+    cursor: pointer;
 }

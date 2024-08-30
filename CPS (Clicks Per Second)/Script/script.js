@@ -17,8 +17,9 @@ area.addEventListener("click", function() {
             estado=false;
 
             mensaje.classList.add("aparecer-mensaje");
-            mensaje.querySelector("p").textContent=`TOTAL CLICKS: ${cont}`;
-        }, 5000);
+            mensaje.querySelector("p").innerHTML=`TOTAL CLICKS: <span>${cont}</span> <br>
+                                                  CLICKS POR SEGUNDO: <span>${cont/5}</span>`;
+        }, 100);
     } else {
         if(estado != false) {
             cont++;

@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilos.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <title>CPS</title>
 </head>
 <body>
-    <div class="texto">
-        <p>Pulsa en el área para empezar</p>
-    </div>
-    <div id="area-pulsar"></div>
-    <div id="contador">0</div>
+    <header>
+        <h1>CPS</h1>
+        <h2>(Clicks Per Second)</h2>
+    </header>
 
-    <div id="mensaje">
-        <p></p>
-        <button class="reset">RESET</button>
-    </div>
+    <main>
+        <!--Texto explicativo-->
+        <div class="texto">
+            <p>Pulsa en el área para empezar</p>
+        </div>
+        <div id="area-pulsar"></div>
+        <div id="contador">0</div>
+    
+        <div id="mensaje">
+            <p></p>
+            <button class="reset">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!--Tiempo máximo para hacer click-->
+        <div class="tiempo">
+            <div>SEGUNDOS</div>
+            <div id="segundos">
+                <div>1</div>
+                <div>5</div>
+                <div>10</div>
+                <div>30</div>
+                <div>60</div>
+            </div>
+        </div>
+    </main>
 
     <script src="Script/script.js"></script>
 </body>
