@@ -79,6 +79,7 @@ main {
     gap: 50px;
     scale: 0;
     transition: 0.3s ease;
+    user-select: none;
 }
 #mensaje p {
     text-align: center;
@@ -117,13 +118,25 @@ main {
     gap: 10px;
 }
 .tiempo > div:first-child {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 #segundos {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 #segundos div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
     cursor: pointer;
+    font-size: 1.2em;
+}
+#segundos div.segundo-activo {
+    background-color: #b4b4b4;
+    color: #1f1f1f;
+    font-weight: bold;
 }
