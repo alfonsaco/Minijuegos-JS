@@ -39,14 +39,15 @@ body {
     gap: 7px;
 }
 .div-intro h1 {
-    color: rgb(83, 83, 83);
+    color: rgb(110, 110, 110);
     font-family: 'Hand';
 }
-.div-intro form {
+.div-intro .subir-tarea {
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .div-intro input {
     height: 30px;
@@ -73,9 +74,7 @@ body {
 /* DIV DE LAS TAREAS */
 .div-tareas {
     width: 100%;
-    overflow: scroll;
 }
-
 .tarea {
     display: flex;
     justify-content: space-between;
