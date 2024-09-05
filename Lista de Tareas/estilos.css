@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Hand';
+    src: url(./Fuentes/simplicity.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    width: 72%;
+    max-width: 750px;
+    height: 90vh;
+    background-color: #fff;
+    position: relative;
+    top: 5%;
+    border: 2px solid rgb(204, 204, 204);
+    padding: 0px 25px;
+    overflow: hidden;
+}
+
+/* PARTE SUPERIOR */
+.div-intro {
+    border-bottom: 2px solid rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    gap: 7px;
+}
+.div-intro h1 {
+    color: rgb(83, 83, 83);
+    font-family: 'Hand';
+}
+.div-intro form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-intro input {
+    height: 30px;
+    font-family: 'Hand';
+    font-weight: bold;
+    width: 80%;
+    border-radius: 0;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+.div-intro input:focus {
+    outline: 0;
+}
+.div-intro button {
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid grey;
+    cursor: pointer;
+    width: 30px;
+    background-color: grey;
+    color: #fff;
+}
+
+/* DIV DE LAS TAREAS */
+.div-tareas {
+    width: 100%;
+    overflow: scroll;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    color: rgb(83, 83, 83);
+    font-family: 'Hand';
+    font-weight: bold;
+    letter-spacing: 3px;
+}   
+.tarea i {
+    cursor: pointer;
+    color: rgb(197, 29, 29);
+}
