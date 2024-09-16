@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d4d4;
+
+}
+.frame {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: #111111;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CIRCULO QUE SIGUE AL CURSOR Y SU ANIMACIÓN */
+#cursor-follow {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animacion {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: .5px solid brown;
+    border-radius: 100%;
+    animation: animacionOnda 1.5s ease infinite;
+}
+@keyframes animacionOnda {
+    from, 50% {
+        scale: 1;
+        opacity: 1;
+    }
+    to {
+        scale: 4;
+        opacity: 0;
+    }
+}
