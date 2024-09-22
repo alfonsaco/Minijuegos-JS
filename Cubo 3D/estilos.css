@@ -5,8 +5,70 @@
 }
 body {
     height: 100vh;
+    background-color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* ESTILOS DE LOS DIVS DEL BODY */
+
+
+/* ESTILOS DEL CUBO */
+.div-cubo {
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.envoltura {
+    perspective: 700px;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    position: absolute;
+}
+.cubo {
+    transform-style: preserve-3d;
+    position: absolute;
+    transition: 1s ease;
+    height: 300px;
+    width: 300px;
+}
+.cubo:hover {
+    transform: rotateX(120deg) rotateY(150deg);
+}
+.cubo > div {
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    border: 10px solid #000000;
+    position: absolute;
+}
+.detras { 
+    transform: translateZ(-150px);
+    background-color: rgb(148, 10, 10);
+}
+.delante {
+    transform: translateZ(150px);
+    background-color: rgb(14, 110, 14);
+}
+.abajo {
+    transform: rotateX(90deg) translateZ(-150px);
+    background-color: rgb(83, 8, 83);
+}
+.arriba {
+    transform: rotateX(90deg) translateZ(150px);
+    background-color: rgb(18, 18, 156);
+}
+.izquierda {
+    transform: rotateY(90deg) translateZ(-150px);
+    background-color: chocolate;
+}
+.derecha {
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: darkgoldenrod;
 }

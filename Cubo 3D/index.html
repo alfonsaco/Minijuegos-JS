@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" type="text/css">
     <title>Cubo 3D</title>
 </head>
+
 <body>
-    <div class="container">
-        <!--Div del cubo-->
-        <div>
-            <div class="envoltura">
-                <div class="cubo">
-                    <div class="arriba"></div>
-                    <div class="abajo"></div>
-                    <div class="delante"></div>
-                    <div class="detras"></div>
-                    <div class="izquierda"></div>
-                    <div class="derecha"></div>
-                </div>
+    <!--Div del cubo-->
+    <div class="div-cubo">
+        <div class="envoltura">
+            <div class="cubo">
+                <div class="arriba"></div>
+                <div class="abajo"></div>
+                <div class="delante"></div>
+                <div class="detras"></div>
+                <div class="izquierda"></div>
+                <div class="derecha"></div>
             </div>
         </div>
-        <!--Div de los campos de texto-->
+    </div>
+    <!--Div de los campos de texto-->
+    <div>
         <div>
-            <div>
-                <h1>rotateX</h1>
-                <input type="number" class="rotateX">
-            </div>
-            <div>
-                <h1>rotateY</h1>
-                <input type="number" class="rotateY">
-            </div>
-            <div>
-                <h1>rotateZ</h1>
-                <input type="number" class="rotateZ">
-            </div>
+            <h1>rotateX</h1>
+            <input type="number" class="rotateX">
         </div>
-        <!--Div del botón-->
         <div>
-            <button>APLICAR</button>
+            <h1>rotateY</h1>
+            <input type="number" class="rotateY">
         </div>
+        <div>
+            <h1>rotateZ</h1>
+            <input type="number" class="rotateZ">
+        </div>
+    </div>
+    <!--Div del botón-->
+    <div>
+        <button>APLICAR</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
