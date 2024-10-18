@@ -7,7 +7,6 @@ body {
     height: 100vh;
     background-color: #eee;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
@@ -19,7 +18,7 @@ body {
 
 /* ESTILOS DEL CUBO */
 .div-cubo {
-    height: 70%;
+    height: 70vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -27,8 +26,8 @@ body {
 }
 .envoltura {
     perspective: 700px;
-    height: 300px;
-    width: 300px;
+    height: 40vh;
+    width: 40vh;
     cursor: pointer;
     position: absolute;
 }
@@ -36,41 +35,38 @@ body {
     transform-style: preserve-3d;
     position: absolute;
     transition: 1s ease;
-    height: 300px;
-    width: 300px;
-}
-.cubo:hover {
-    transform: rotateX(120deg) rotateY(150deg);
+    height: 100%;
+    width: 100%;
 }
 .cubo > div {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     opacity: 0.5;
     border: 10px solid #000000;
     position: absolute;
 }
 .detras { 
-    transform: translateZ(-150px);
+    transform: translateZ(-20vh);
     background-color: rgb(148, 10, 10);
 }
 .delante {
-    transform: translateZ(150px);
+    transform: translateZ(20vh);
     background-color: rgb(14, 110, 14);
 }
 .abajo {
-    transform: rotateX(90deg) translateZ(-150px);
+    transform: rotateX(90deg) translateZ(-20vh);
     background-color: rgb(83, 8, 83);
 }
 .arriba {
-    transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(20vh);
     background-color: rgb(18, 18, 156);
 }
 .izquierda {
-    transform: rotateY(90deg) translateZ(-150px);
+    transform: rotateY(90deg) translateZ(-20vh);
     background-color: chocolate;
 }
 .derecha {
-    transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(20vh);
     background-color: darkgoldenrod;
 }
 
@@ -91,11 +87,18 @@ body {
     height: 40px;
     border: 2px solid #000;
     padding-left: 10px;
-    font-size: 1.7em;
-    text-align: center;
+    font-size: 1.6em;
+    text-align: left;
+    padding-left: 5px;
+}
+[type="number"]:focus {
+    outline: 0;
 }
 
 /* ESTILOS DEL BOTÓN */
+.div-boton {
+    margin: 30px 0px 50px 0px;
+}
 button {
     width: 200px;
     height: 60px;
