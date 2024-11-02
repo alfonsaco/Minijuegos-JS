@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+div {
+    border: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+div.bomba {
+    background-color: #000;
+}
+div.uno {
+    background-color: rgb(144, 144, 255);
+}
+div.dos {
+    background-color: rgb(122, 255, 122);
+}
+div.tres {
+    background-color: rgb(255, 142, 142);
+}
+div.cuatro {
+    background-color: rgb(197, 135, 255);
+}
